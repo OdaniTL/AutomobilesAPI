@@ -11,17 +11,12 @@ Creation of an automotive api rest without framework.
 
 ## Features
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
-
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://link-to-project](https://github.com/OdaniTL/AutomobilesAPI.git
 ```
 
 Go to the project directory
