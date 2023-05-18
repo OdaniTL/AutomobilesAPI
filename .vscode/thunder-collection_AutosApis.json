@@ -1,0 +1,121 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "AutosApis",
+    "dateExported": "2023-05-05T19:03:45.182Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "7afbe41d-3fb4-4c98-9d60-ca29fb1dde6c",
+            "colId": "92144629-a7f2-4fdf-8256-1241708d97fa",
+            "containerId": "",
+            "name": "GetAutos",
+            "url": "http://localhost:6415/api/autos/getAll",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-03-14T16:32:06.891Z",
+            "modified": "2023-05-02T15:45:58.825Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c01086ca-cf57-4e81-88ad-c424d54c40bc",
+            "colId": "92144629-a7f2-4fdf-8256-1241708d97fa",
+            "containerId": "",
+            "name": "AddAutos",
+            "url": "http://localhost:6415/api/autos/create",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-03-16T19:37:17.483Z",
+            "modified": "2023-05-04T14:57:10.201Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "\n{\n\"brand\": \"Toyota\",\n\"model\": \"Corolla\",\n\"year\": 2023,\n\"body_type\": \"sedan\",\n\"engine_type\": \"gasoline\",\n\"displacement\": 1598,\n\"price\": 25000.50,\n\"state\": true\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1b900ed1-6803-4785-b691-1cff9bd8dd3f",
+            "colId": "92144629-a7f2-4fdf-8256-1241708d97fa",
+            "containerId": "",
+            "name": "GetByName",
+            "url": "http://localhost:6415/api/autos/findByName?name=Toyota",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-05-02T14:59:38.891Z",
+            "modified": "2023-05-02T18:54:11.825Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "Toyota",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "34c0968b-9209-4463-bca0-e88d1ec9a0bf",
+            "colId": "92144629-a7f2-4fdf-8256-1241708d97fa",
+            "containerId": "",
+            "name": "GetAutoById",
+            "url": "http://localhost:6415/api/autos/findById?autoid=13",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-05-03T18:31:34.875Z",
+            "modified": "2023-05-04T14:57:36.239Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "autoid",
+                    "value": "13",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "b2c41f4f-80db-4ef2-ab25-a891829e0747",
+            "colId": "92144629-a7f2-4fdf-8256-1241708d97fa",
+            "containerId": "",
+            "name": "PutAutos",
+            "url": "http://localhost:6415/api/autos/update",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-05-04T13:36:38.045Z",
+            "modified": "2023-05-04T13:59:31.816Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"auto_id\": 112,\n\"brand\": \"Toyota\",\n\"model\": \"Corolla\",\n\"year\": 2018,\n\"body_type\": \"sedan\",\n\"engine_type\": \"gasoline\",\n\"displacement\": 1598,\n\"price\": 25000.50,\n\"state\": true\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "afc906f9-2e11-442c-a211-8027f22c7b61",
+            "colId": "92144629-a7f2-4fdf-8256-1241708d97fa",
+            "containerId": "",
+            "name": "DeleteAuto",
+            "url": "http://localhost:6415/api/autos/delete?autoId=13",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-05-05T19:01:58.587Z",
+            "modified": "2023-05-05T19:03:24.183Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "autoId",
+                    "value": "13",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
